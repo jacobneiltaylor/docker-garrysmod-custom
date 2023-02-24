@@ -18,7 +18,7 @@ jobs:
         with:
           aws-region: ap-southeast-2
           role-to-assume: arn:aws:iam::491391447105:role/GithubActionsGameServerContainerBuildRole
-          role-session-name: ${{ github.run_id }}
+          role-session-name: GitHubActionsRun${{ github.run_id }}
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
