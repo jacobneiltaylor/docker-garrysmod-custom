@@ -18,4 +18,4 @@ RUN --mount=type=secret,id=RCON_PASSWORD echo rcon_password "$(cat /run/secrets/
 
 USER steam
 
-CMD [ "/opt/steam/bin/entrypoint.sh" ]
+CMD [ "+map", "gm_construct", "+maxplayers", "20", "+host_workshop_collection", "2095965929" ]
